@@ -35,6 +35,9 @@ decode compared CPU-only decoding.
 Summary:        Development files for CUDA NVIDIA JPEG decoder (nvJPEG)
 Requires:       %{name}%{_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 Conflicts:      %{name}-devel-%{major_package_version} < %{?epoch:%{epoch}:}%{version}
+# Drop in 11.7:
+Provides:       cuda-nvjpeg-devel = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      cuda-nvjpeg-devel < %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description devel
 This package provides development files for the CUDA NVIDIA JPEG decoder
@@ -43,6 +46,9 @@ This package provides development files for the CUDA NVIDIA JPEG decoder
 %package static
 Summary:        Static libraries for CUDA NVIDIA JPEG decoder (nvJPEG)
 Requires:       %{name}-devel%{_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
+# Drop in 11.7:
+Provides:       cuda-static = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      cuda-static < %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description static
 This package contains static libraries for CUDA NVIDIA JPEG decoder (nvJPEG).
