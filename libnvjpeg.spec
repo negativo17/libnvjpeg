@@ -2,11 +2,11 @@
 %global __strip /bin/true
 %global _missing_build_ids_terminate_build 0
 %global _build_id_links none
-%global major_package_version 11-6
+%global major_package_version 11-8
 
 Name:           libnvjpeg
 Epoch:          1
-Version:        11.8.0.2
+Version:        11.9.0.86
 Release:        1%{?dist}
 Summary:        CUDA NVIDIA JPEG decoder (nvJPEG)
 License:        CUDA Toolkit
@@ -97,6 +97,9 @@ sed -i \
 %{_libdir}/libnvjpeg_static.a
 
 %changelog
+* Fri Nov 11 2022 Simone Caronni <negativo17@gmail.com> - 1:11.9.0.86-1
+- Update to 11.9.0.86.
+
 * Sun Sep 04 2022 Simone Caronni <negativo17@gmail.com> - 1:11.8.0.2-1
 - Update to 11.8.0.2.
 
