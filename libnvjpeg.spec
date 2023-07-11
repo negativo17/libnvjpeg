@@ -15,7 +15,7 @@ ExclusiveArch:  x86_64 ppc64le aarch64
 
 Source0:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-x86_64/%{name}-linux-x86_64-%{version}-archive.tar.xz
 Source1:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-ppc64le/%{name}-linux-ppc64le-%{version}-archive.tar.xz
-Source2:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-sbsa/%{name}-linux-sbsa-%{version}-archive.tar.xz
+Source2:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-aarch64/%{name}-linux-aarch64-%{version}-archive.tar.xz
 Source3:        nvjpeg.pc
 
 Requires(post): ldconfig
