@@ -6,7 +6,7 @@
 
 Name:           libnvjpeg
 Epoch:          1
-Version:        12.2.2.4
+Version:        12.3.0.81
 Release:        1%{?dist}
 Summary:        CUDA NVIDIA JPEG decoder (nvJPEG)
 License:        CUDA Toolkit
@@ -15,7 +15,7 @@ ExclusiveArch:  x86_64 ppc64le aarch64
 
 Source0:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-x86_64/%{name}-linux-x86_64-%{version}-archive.tar.xz
 Source1:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-ppc64le/%{name}-linux-ppc64le-%{version}-archive.tar.xz
-Source2:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-aarch64/%{name}-linux-aarch64-%{version}-archive.tar.xz
+Source2:        https://developer.download.nvidia.com/compute/cuda/redist/%{name}/linux-sbsa/%{name}-linux-sbsa-%{version}-archive.tar.xz
 Source3:        nvjpeg.pc
 
 Requires(post): ldconfig
@@ -97,6 +97,9 @@ sed -i \
 %{_libdir}/libnvjpeg_static.a
 
 %changelog
+* Tue Nov 28 2023 Simone Caronni <negativo17@gmail.com> - 1:12.3.0.81-1
+- Update to 12.3.0.81.
+
 * Thu Sep 28 2023 Simone Caronni <negativo17@gmail.com> - 1:12.2.2.4-1
 - Update to 12.2.2.4.
 
