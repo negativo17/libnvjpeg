@@ -6,7 +6,7 @@
 
 Name:           libnvjpeg
 Epoch:          1
-Version:        12.3.3.54
+Version:        12.3.5.57
 Release:        1%{?dist}
 Summary:        CUDA NVIDIA JPEG decoder (nvJPEG)
 License:        CUDA Toolkit
@@ -83,6 +83,9 @@ sed -i \
 %{_libdir}/libnvjpeg_static.a
 
 %changelog
+* Fri Feb 07 2025 Simone Caronni <negativo17@gmail.com> - 1:12.3.5.57-1
+- Update to 12.3.5.57.
+
 * Thu Sep 19 2024 Simone Caronni <negativo17@gmail.com> - 1:12.3.3.54-1
 - Update to 12.3.3.54.
 
